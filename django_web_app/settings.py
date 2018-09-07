@@ -123,3 +123,12 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_PORT = '2525'
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = '33310a5cd2dc8a'
+# EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
+EMAIL_HOST_PASSWORD = 'efb89b5e8ebf21'
+# EMAIL_HOST_PASSWORD =  os.environ.get('EMAIL_PASS')
